@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".StatusFragment">
+
+
+    <LinearLayout
+        android:id="@+id/statuslayout"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:orientation="horizontal">
+
+
+        <RelativeLayout
+
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:padding="15dp">
+
+
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:layout_width="80dp"
+            android:layout_height="74dp"
+            android:id="@+id/statusImage"
+            android:src="@drawable/accountgreen" />
+
+            <ImageView
+                android:layout_width="75dp"
+                android:visibility="gone"
+                android:layout_height="85dp"
+                android:id="@+id/statusround"
+                android:src="@drawable/round" />
+
+            <ImageView
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:layout_marginTop="55dp"
+                android:id="@+id/addicon"
+                android:layout_marginLeft="45dp"
+                android:src="@drawable/add" />
+
+        </RelativeLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_marginTop="22dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+
+            android:textSize="20dp"
+            android:hint="My Status"
+            android:layout_marginTop="1dp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="13dp"
+            android:text="Tab to add status update"
+            android:layout_marginTop="1dp"/>
+
+
+    </LinearLayout>
+
+
+    </LinearLayout>
+
+    <RelativeLayout
+        android:id="@+id/re"
+        android:layout_below="@id/statuslayout"
+        android:layout_width="match_parent"
+        android:background="@color/colorAccent"
+        android:layout_height="30dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="15dp"
+            android:layout_marginTop="5dp"
+            android:textSize="13dp"
+            android:hint="Recent update"/>
+
+    </RelativeLayout>
+
+    <android.support.v7.widget.RecyclerView
+        android:layout_below="@id/re"
+        android:id="@+id/statusRecyclerView"
+        android:layout_width="match_parent"
+        android:layout_above="@id/addStatusRe"
+        android:layout_height="wrap_content" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:id="@+id/addStatusRe"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentStart="true"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_marginStart="345dp"
+            android:layout_marginBottom="10dp"
+            android:id="@+id/addStatus"
+            android:layout_marginLeft="45dp"
+            android:src="@drawable/plus" />
+
+    </RelativeLayout>
+
+
+
+
+
+
+
+
+
+</RelativeLayout>
